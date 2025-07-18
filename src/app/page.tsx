@@ -1,5 +1,13 @@
 import React from 'react';
 import { Github, Linkedin, Mail, School, Briefcase } from 'lucide-react';
+const isGithubActions = process.env.GITHUB_ACTIONS || false
+let basePath = ''
+
+if (isGithubActions) {
+  const repo = 'personal-website'
+  basePath = `/${repo}`
+}
+
 // --- Project Data ---
 const marqueeProjects = [
   {
@@ -81,7 +89,7 @@ export default function App() {
               {marqueeProjects.map((project, index) => (
                 <div key={index} className="bg-slate-800/50 rounded-xl overflow-hidden shadow-lg transition-all duration-300 hover:shadow-teal-500/20 hover:scale-[1.02]">
                   <div className='max-h-[512px] overflow-hidden'>
-                    <img src={`${process.env.NEXT_PUBLIC_BASE_PATH || ''}` + project.image} alt={`${project.title} screenshot`} className="w-full h-auto" />
+                    <img src={basePath+project.image} alt={`${project.title} screenshot`} className="w-full h-auto" />
                     </div>
                   <div className="p-6 md:p-8">
                     <h3 className="text-2xl font-bold text-teal-400 mb-2">{project.title}</h3>
