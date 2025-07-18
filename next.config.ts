@@ -6,7 +6,6 @@ let assetPrefix = ''
 let basePath = ''
 
 if (isGithubActions) {
-  // replace `my-portfolio` with your repo name
   const repo = 'personal-website'
   assetPrefix = `/${repo}/`
   basePath = `/${repo}`
@@ -20,6 +19,7 @@ const nextConfig: NextConfig = {
   },
   basePath,
   assetPrefix,
+  trailingSlash: true,
 };
 
 export default nextConfig;
