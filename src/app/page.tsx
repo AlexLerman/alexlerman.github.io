@@ -69,7 +69,7 @@ export default function App() {
           {/* About Section */}
           <section className="my-16 mt-2">
              <p className="text-center text-slate-400 max-w-2xl mx-auto">
-                I'm a developer and leader with experience building webapps, innovative game mechanics, and machine learning algorithms. From architecting marketplaces to developing voice-controlled games, I love building products, tackling complex technical challenges and creating engaging user experiences.
+                I&apos;m a developer and leader with experience building webapps, innovative game mechanics, and machine learning algorithms. From architecting marketplaces to developing voice-controlled games, I love building products, tackling complex technical challenges and creating engaging user experiences.
             </p>
           </section>
 
@@ -136,7 +136,7 @@ export default function App() {
             </h2>
              <div className="bg-slate-800/50 p-4 rounded-lg">
                 <h3 className="text-lg text-slate-300 font-medium">Stanford University</h3>
-                <p className="text-teal-400">Bachelor's in Symbolic Systems</p>
+                <p className="text-teal-400">Bachelor&apos;s in Symbolic Systems</p>
                 <p className="text-slate-400 text-sm">Concentration in Neuroscience</p>
              </div>
           </section>
