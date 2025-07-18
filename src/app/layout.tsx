@@ -42,7 +42,9 @@ export const metadata = {
   description: 'A showcase of my projects and skills.',
 }
 
-export default function RootLayout({ children }) {
+export default function RootLayout({ children }: Readonly<{
+    children: React.ReactNode;
+  }>) {
   return (
     <html lang="en" className="scroll-smooth">
       <body className={inter.className}>{children}</body>
