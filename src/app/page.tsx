@@ -1,12 +1,12 @@
 import React from 'react';
 import { Github, Linkedin, Mail, School, Briefcase } from 'lucide-react';
-const isGithubActions = process.env.GITHUB_ACTIONS || false
-let basePath = ''
+// const isGithubActions = process.env.GITHUB_ACTIONS || false
+const basePath = ''
 
-if (isGithubActions) {
-  const repo = 'personal-website'
-  basePath = `/${repo}`
-}
+// if (isGithubActions) {
+//   const repo = 'personal-website'
+//   basePath = `/${repo}`
+// }
 
 // --- Project Data ---
 const marqueeProjects = [
@@ -76,7 +76,7 @@ export default function App() {
           {/* About Section */}
           <section className="my-16 mt-2">
              <p className="text-center text-slate-400 max-w-2xl mx-auto">
-                I&apos;m a developer and leader with experience building webapps, innovative game mechanics, and machine learning algorithms. From architecting marketplaces to developing voice-controlled games, I love building products, tackling complex technical challenges and creating engaging user experiences.
+                I&apos;m a developer and leader with experience building webapps, innovative game mechanics, and machine learning algorithms. From architecting marketplaces to developing voice-controlled games, I love building products, tackling complex technical challenges, and creating engaging user experiences.
             </p>
           </section>
 
